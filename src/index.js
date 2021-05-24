@@ -29,6 +29,7 @@ app.use((req, res, next) => {
     next();
 });
 
+/*
 app.use((req, res, next) => {
     console.log(req.headers);
 
@@ -38,6 +39,7 @@ app.use((req, res, next) => {
         res.status(403).json({ message: 'Access is forbidden' });
     }
 });
+*/
 
 app.use('/api/todos', apiRouter);
 
